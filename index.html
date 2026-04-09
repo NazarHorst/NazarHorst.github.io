@@ -77,14 +77,14 @@
 
   .hero-tag {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--terracotta);
     background: rgba(181, 103, 77, 0.08);
-    padding: 4px 12px;
+    padding: 2px 8px;
     border-radius: 20px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .hero h1 {
@@ -140,7 +140,7 @@
 
   .personal-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1px;
     background: var(--sand);
     border: 1px solid var(--sand);
@@ -305,22 +305,22 @@
 <nav>
   <span class="nav-name">Назар</span>
   <ul class="nav-links">
-    <li><a href="#personal">Личное</a></li>
-    <li><a href="#work">Работа</a></li>
-    <li><a href="#now">Увлечения</a></li>
+    <li><a href="#personal">Кто такой</a></li>
+    <li><a href="#work">Над чем работаю</a></li>
+    <li><a href="#now">В чём развиваюсь</a></li>
   </ul>
 </nav>
 
 <div class="hero">
+  <h1>Назар</h1>
   <span class="hero-tag">кандидат медицинских наук</span>
-  <h1>Назар —<br>учёный,<br>преподаватель<br>и <em>человек</em>.</h1>
-  <p class="hero-bio">Занимаюсь наукой и учу других думать. Стараюсь быть разносторонним и не останавливаться.</p>
+  <p class="hero-bio">учёный, преподаватель и <em>человек</em>. Занимаюсь наукой и учу других думать. Стараюсь быть разносторонним и не останавливаться.</p>
 </div>
 
 <section id="personal" class="border-top">
   <div class="section-header">
     <span class="section-number">01</span>
-    <h2 class="section-title">Личное</h2>
+    <h2 class="section-title">Кто такой</h2>
   </div>
   <div class="personal-grid">
     <div class="personal-cell">
@@ -333,11 +333,23 @@
     </div>
     <div class="personal-cell">
       <div class="cell-label">Место</div>
-      <div class="cell-value">Германия</div>
+      <div class="cell-value">Москва</div>
     </div>
     <div class="personal-cell">
       <div class="cell-label">Языки</div>
       <div class="cell-value">Рус, EN, <em>DE (в процессе)</em></div>
+    </div>
+    <div class="personal-cell">
+      <div class="cell-label">Рост</div>
+      <div class="cell-value">172 см</div>
+    </div>
+    <div class="personal-cell">
+      <div class="cell-label">Масса тела</div>
+      <div class="cell-value">на уточнении</div>
+    </div>
+    <div class="personal-cell">
+      <div class="cell-label">Знак зодиака</div>
+      <div class="cell-value">Дева, асцендент Близнецы</div>
     </div>
   </div>
   <p class="bio-text">Я из тех, кто сначала понимает всю систему, а потом действует. Мне интересно всё — от того, как работает иммунная система, до того, как устроены данные и немецкая грамматика. Люблю, когда сложное становится понятным.</p>
@@ -352,7 +364,7 @@
 <section id="work" class="border-top">
   <div class="section-header">
     <span class="section-number">02</span>
-    <h2 class="section-title">Работа</h2>
+    <h2 class="section-title">Над чем работаю</h2>
   </div>
   <div class="work-block">
     <div style="margin-bottom: 0.6rem;">
@@ -375,7 +387,7 @@
 <section id="now" class="border-top">
   <div class="section-header">
     <span class="section-number">03</span>
-    <h2 class="section-title">Увлечения</h2>
+    <h2 class="section-title">В чём развиваюсь</h2>
   </div>
   <p class="updated" style="margin-bottom: 1.5rem;">Обновлено: апрель 2025</p>
   <div class="hobby-grid">
